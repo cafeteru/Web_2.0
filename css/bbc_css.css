@@ -1,0 +1,58 @@
+body {
+    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+}
+#topbar {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    height: 40px;
+}
+#logo {
+    margin-top: 8px;
+    width: 84px;
+    height: 24px;
+    float: left;
+    margin-right: 8px;
+}
+.topbar-section{
+    float: left;
+    border-left: 1px grey solid;
+    height: 100%;
+}
+#signin-img {
+    width: 30px;
+    margin: 5px 6px;
+    float: left;
+}
+.topbar-common {
+    font-weight:bold;
+    font-size: 85%;
+}
+#signin-text {
+    position: relative;
+    top: 14px;
+    padding-right: 70px;
+}
+.topbar-menu {
+    padding: 13px 15px 0 15px;
+    height: 27px;
+}
+#more-arrow {
+    position: relative;
+    float: right;
+    margin-left: 30px;
+    width: 20px;
+    top: -4px;
+}
+#search-box {
+    background-color: #E4E4E4;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    float: left;
+    margin: 9px 0 5px 5px;
+}
+#lens {
+    margin-top: 9px;
+}
