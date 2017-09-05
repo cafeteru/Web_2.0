@@ -1,12 +1,14 @@
 body {
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
 }
+
 #topbar {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     background-color: white;
     height: 40px;
 }
+
 #logo {
     margin-top: 8px;
     width: 84px;
@@ -14,29 +16,35 @@ body {
     float: left;
     margin-right: 8px;
 }
+
 .topbar-section{
     float: left;
     border-left: 1px grey solid;
     height: 100%;
 }
+
 #signin-img {
     width: 30px;
     margin: 5px 6px;
     float: left;
 }
+
 .topbar-common {
     font-weight:bold;
     font-size: 85%;
 }
+
 #signin-text {
     position: relative;
     top: 14px;
     padding-right: 70px;
 }
+
 .topbar-menu {
     padding: 13px 15px 0 15px;
     height: 27px;
 }
+
 #more-arrow {
     position: relative;
     float: right;
@@ -44,40 +52,49 @@ body {
     width: 20px;
     top: -4px;
 }
+
 #search-box {
     background-color: #E4E4E4;
     border: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     width: 100px;
     float: left;
     margin: 9px 0 5px 5px;
 }
+
 #lens {
     margin-top: 9px;
+    width: 27px;
 }
+
 .clear {
     clear: both;
 }
+
 #menu-bar-container {
     background-color: #BB1919;
     border-top: 1px solid black;
     width: 100%;
     height: 70px;
 }
+
 #menu-bar {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
 }
+
 #menu-bar-container-2 {
     background-color: #A91717;
     width: 100%;
     height: 40px;
 }
+
 #menu-bar-2 {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
 }
+
 #menu-bar-2 a {
     color: white;
     text-decoration: none;
@@ -87,20 +104,71 @@ body {
     top: 10px;
     padding: 10px;
 }
+
 #menu-bar-2 a:hover{
     text-decoration: underline;
 }
+
 h1 {
     color: white;
     font-size: 40px;
     font-weight: 300;
     padding: 10px;
 }
+
 .no-border {
     border: none !important;
 }
+
 #arrow-red {
     height: 10px;
     position: relative;
     top: 10px;
+}
+
+#page-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 3px solid red;
+    width: 105px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h3 a {
+    color: gray;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+h3 a:hover {
+     color: darkblue;
+}
+
+#article-summary {
+    width: 270px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#article-summary img{
+    height: 15px;
+    position: relative;
+    top: 2.3px;
+}
+
+#article-summary a {
+    text-decoration: none;
+    color: black;
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+
+#article-summary a:hover {
+    color: blue;
 }
