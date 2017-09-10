@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <p id="text"></p>
+        <p id="text2">Hola Mundo</p>
+        <button id="button">Cambiar texto</button>
+        <p id="text3">Javascript es...</p>
+        <p id="text4"></p>
+        <button id="button2">Crear parrafo</button>
+        <p id="styleP">Texto con estilo</p>
+        <button id="button3">Modifica Estilo</button>
+        <br>
+        <br>
+        <input id="input" type="text" placeholder="Tu nombre">
+        <button id="button4">Introducir</button>
+        <script type="text/javascript">
+            var a = "Holaaaa";
+            // innerHTML modifica el contenido dentro de la etiqueta
+            document.getElementById("text").innerHTML = a;
+            document.getElementById("button").onclick = 
+                function() {
+                    document.getElementById("text2").innerHTML = "Cambio texto";
+                    document.getElementById("text3").innerHTML += " la leche";
+                    
+            }
+            document.getElementById("button2").onclick =
+                function() {
+                    document.getElementById("text4").innerHTML = "<h1>Creado</h1>";
+            }
+            document.getElementById("button3").onclick = 
+                function() {
+                    document.getElementById("styleP").style.color = "red";
+                    document.getElementById("styleP").style.background = "black";
+                    document.getElementById("styleP").style.width = "200px";
+            }
+            document.getElementById("button4").onclick = 
+                function() {
+                    var button = document.getElementById("input");
+                    var name = button.value;
+                    if(name != "") {
+                        var campo = document.getElementById("text4");
+                        campo.innerHTML += "Añadimos elemento a elemento: <br>"
+                        alert(name);
+                        button.value = "";
+                        var array = new Array();
+                        var i = 0;
+                        for(; i < 5; i++){
+                            array[i] = [i];
+                        }
+                        while(i > 0) {
+                            campo.innerHTML += array[i - 1];
+                            i--;
+                        } 
+                        campo.innerHTML += "<br>Añadimos array entero: <br>";
+                        var ar = ["a" , "b"];
+                        ar.push("c");
+                        campo.innerHTML += ar;
+                    } else {
+                        alert("Campo vacio");
+                    }                  
+            }
+        </script>
+    </body>    
+</html> 
