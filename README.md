@@ -3,3 +3,4 @@ Conceptos basicos de programación Web
 - HTML y HTML5
 - CSS Y CSS3
 - Javascript
+- jQuery
