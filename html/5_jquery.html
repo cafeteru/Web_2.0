@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <script src="../javascript/jQuery_min.js"></script>
+    <style type="text/css">
+        #circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 10px;
+        }
+
+        .square {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 10px;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <p>Textooooo</p>
+    <iframe src="https://www.youtube.com/embed/n76DBcgyZ3g" frameborder="0" allowfullscreen></iframe>
+    <script type="text/javascript">
+        $("#circle").click(function() {
+            $("p").html("Este texto ha cambiado.");
+            alert($("p").html());
+        })
+        $(".square").click(function() {
+            alert($("body").css("width"));
+            $(".square").css("background-color", "blue");
+            // this solo hace referencia al propio elemento
+            $(this).css("width", "300px");
+        })
+        $("#circle").hover(function() {
+            $("p").html("Informacion: busca jQuery API");
+            $("iframe").attr("src", "https://www.ecowebhosting.co.uk/");
+        })
+        /*$("div").click(function() {
+            alert("Click en el div");
+        })*/
+    </script>
+</body>
+
+</html>

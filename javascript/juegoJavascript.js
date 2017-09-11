@@ -17,8 +17,8 @@ function randomColor() {
 }
 
 function reset() {
-    var top = Math.random() * 500;
-    var left = Math.random() * 500;
+    var top = Math.random() * document.body.clientHeight;
+    var left = Math.random() * document.body.clientWidth;
     var width = Math.random() * 300 + 20;
 
     if(Math.random() > 0.5){
