@@ -1,4 +1,4 @@
- var initialTime = new Date().getTime();
+var initialTime = new Date().getTime();
 var form = document.getElementById("form");
 
 function calculateTime() {
