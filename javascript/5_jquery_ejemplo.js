@@ -1,5 +1,5 @@
 var text = $("#text");
-$("div").click(function() {
+$(".square").click(function() {
     // $(this).hide(); // Desaparece
     $(this).fadeOut(); // Desvanece lentamente
 })
@@ -25,6 +25,18 @@ $("#button3").click(function() {
         text.fadeOut();
     else
         reappear();
+})
+
+$("#circle2").click(function(){
+    $(this).animate(
+        {
+        width:"300px",
+        height:"300px",
+        marginLeft: "30px",
+        marginTop: "30px"
+        },1500, function(){
+            $(this).css("background-color", "purple");
+        });
 })
 
 /*$("#circle").click(function() {
